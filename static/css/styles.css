@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input, select {
+    width: 30%; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 25px;
+    background: rgb(247, 248, 248);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: #000000;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+h3 {
+    margin-top: 20px;
+    color: #333;
+}

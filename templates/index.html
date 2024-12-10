@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+</head>
+<body>
+    <div class="form-container">
+        <form action="{{ url_for('predict') }}" method="POST">
+            <h2>Car Price Prediction</h2>
+            <label class="form-label">Year</label>
+            <input type="text" id="Year" name="Year" required="required"><br>
+            <label class="form-label">Showroom Price</label>
+            <input type="text" id="Present_Price" name="Present_Price" required="required"><br>
+            <label class="form-label">Kilometers Travelled</label>
+            <input type="text" id="Kms_Driven" name="Kms_Driven" required="required"><br>
+            <label class="form-label">No. of Owners Previously</label>
+            <input type="text" id="Owner" name="Owner" required="required">
+            <label class="form-label">Fuel Type</label>
+            <select id="Fuel_Type" name="Fuel_Type" required="required">
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+                <option value="CNG">CNG</option>
+            </select><br>
+            <label class="form-label">Seller Type</label>
+            <select name="Seller_Type" id="Seller_Type">
+                <option value="Dealer">Dealer</option>
+                <option value="Individual">Individual</option>
+            </select><br>
+            <label class="form-label">Transmission Type</label>
+            <select name="Transmission_Type" id="Transmission_Type">
+                <option value="Manual">Manual</option>
+                <option value="Automatic">Automatic</option>
+            </select><br>
+            <br><br>
+            <button id="sub" type="submit">Calculate The Price</button>
+        </form>
+        <h3>{{Prediction_Text}} lakhs</h3>
+    </div>
+</body>
+</html>
